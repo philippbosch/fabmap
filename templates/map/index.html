@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    
+    <head>
+        <title>FabMap</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="stylesheet" type="text/css" href="media/css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="media/css/map.css" />
+        <script type="text/javascript" charset="utf-8" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script type="text/javascript" charset="utf-8" src="media/js/jquery.js"></script>
+        <script type="text/javascript" charset="utf-8" src="media/js/map.js"></script>
+    </head>
+    
+    <body>
+        <div id="header">
+            <h1>FabMap</h1>
+            <ul id="nav">
+                <li><a href="#add">Add</a></li>
+            </ul>
+        </div>
+        <div id="map"></div>
+        <div id="add">
+            <h2>Add yourself</h2>
+            <form method="post" action="/add/">
+                <div class="row required">{{ add_form.type.label_tag }}{{ add_form.type }}</div>
+                <div class="row">{{ add_form.location_name.label_tag }}{{ add_form.location_name }}</div>
+                <div class="row required">{{ add_form.contact_name.label_tag }}{{ add_form.contact_name }}</div>
+                <div class="row required">{{ add_form.email.label_tag }}{{ add_form.email }}<div class="helptext">We will not publish this anywhere. We only need this to send you a link to edit your information later.</div></div>
+                <div class="row required">{{ add_form.address.label_tag }}{{ add_form.address }}</div>
+                <div class="row">{{ add_form.website.label_tag }}{{ add_form.website }}</div>
+                <div class="row">{{ add_form.twitter.label_tag }}{{ add_form.twitter }}</div>
+                <div class="row">{{ add_form.description.label_tag }}{{ add_form.description }}</div>
+                
+                {{ add_form.latitude }}
+                {{ add_form.longitude }}
+                
+                <button type="submit">Add</button>
+            </form>
+        </div>
+    </body>
+    
+</html>

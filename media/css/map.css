@@ -1,0 +1,123 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+strong {
+    font-weight: bold;
+}
+
+#header {
+    height: 7%;
+    background: #369;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,0.3)), to(rgba(255,255,255,0)));
+    padding: 0 24px;
+    border-bottom: 0px solid #258;
+    position: relative;
+}
+
+#nav {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    height: 24px;
+    line-height: 24px;
+    margin-top: -12px;
+}
+
+#nav a {
+    color: #FFF;
+}
+
+#map {
+    width: 100%;
+    height: 93%;
+}
+
+h1 {
+    height: 100%;
+    font-size: 200%;
+    color: #FFF;
+    line-height: 1;
+    padding-top: 1%;
+}
+
+
+#add {
+/*    display: none;*/
+    width: 320px;
+    position: absolute;
+    top: 6%;
+    right: 24px;
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 18px;
+    -moz-box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+
+#add h2 {
+    font-size: 120%;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#add div.row {
+    margin-bottom: 0.3em;
+}
+
+#add label {
+    display: block;
+    font-size: 80%;
+    color: #666;
+}
+
+#add .required label {
+    font-weight: bold;
+    color: #000;
+}
+
+#add input, #add select, #add textarea {
+    width: 100%;
+}
+
+#add input, #add textarea {
+    border: 1px solid #ccc;
+}
+
+#add textarea {
+    height: 75px;
+}
+
+#add .helptext {
+    font-size: 65%;
+}
+
+#add .geocode-ok {
+    border-color: green;
+}
+
+#add .geocode-fail {
+    border-color: red;
+}
+
+#id_latitude, #id_longitude {
+    display: none;
+}
+
+.info {
+}
+
+.info .type {
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.info .type, .info .address, .info .website, .info .twitter {
+    font-size: 75%;
+}
